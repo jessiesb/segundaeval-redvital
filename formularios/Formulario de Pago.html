@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style_formulario.css">
+</head>
+<body>
+  <section class="contact-section" id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" method="POST" action="/contact/add">
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombres completos" required>
+      </div>
+      <div class="form-group">
+        <textarea name="comentario" rows="5" placeholder="Tu mensaje" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Enviar Mensaje</button>
+    </form>
+  </section>
+
+<section class="payment-section" id="pago">
+  <h2>Realizar Pago</h2>
+  <form class="payment-form" method="POST" action="/payment/add">
+    <div class="form-group">
+      <select name="servicio" required>
+        <option value="">Seleccione un servicio</option>
+        <option value="entrenamiento">Entrenamiento Personalizado</option>
+        <option value="nutricion">Plan Nutricional</option>
+        <option value="horarios">Horarios Personalizados</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="titular" placeholder="Nombre del titular" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="numero_tarjeta" placeholder="Número de tarjeta" pattern="\d{16}" required>
+    </div>
+    <div class="form-group">
+      <input type="number" name="mes_expiracion" placeholder="MM" min="1" max="12" required>
+      <input type="number" name="ano_expiracion" placeholder="AAAA" min="2024" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="cvv" placeholder="CVV" pattern="\d{3}" required>
+    </div>
+    <div class="form-group">
+      <input type="number" name="monto" placeholder="Monto en USD" min="1" required>
+    </div>
+    <button type="submit" class="cta-button">Pagar ahora</button>
+  </form>
+</section>
+
+<script src="Controlador de Contactos.ts"></script>
+<script src="Modelo de Contactos.ts"></script>
+
+</body>
+</html>

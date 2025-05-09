@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.contact-section, .payment-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3b6b3bc9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .contact-section, .payment-section {
+    margin: 20px;
+    padding: 15px;
+    }
+}

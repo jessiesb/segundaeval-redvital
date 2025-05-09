@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos Registrados</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Contactos Registrados</h1>
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Comentario</th>
+                <th>IP</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contacto in contactos %}
+            <tr>
+                <td>{{ contacto[0] }}</td>
+                <td>{{ contacto[2] }}</td>
+                <td>{{ contacto[1] }}</td>
+                <td>{{ contacto[3] }}</td>
+                <td>{{ contacto[4] }}</td>
+                <td>{{ contacto[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

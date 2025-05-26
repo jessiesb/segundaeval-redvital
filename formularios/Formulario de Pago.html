@@ -3,6 +3,7 @@
 <head>
   <title>Formulario</title>
   <link rel="stylesheet" href="style_formulario.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <section class="contact-section" id="contacto">
@@ -17,6 +18,9 @@
       <div class="form-group">
         <textarea name="comentario" rows="5" placeholder="Tu mensaje" required></textarea>
       </div>
+                  <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
+            </div>
       <button type="submit" class="cta-button">Enviar Mensaje</button>
     </form>
   </section>
@@ -51,6 +55,9 @@
     <div class="form-group">
       <input type="number" name="monto" placeholder="Monto en USD" min="1" required>
     </div>
+                <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
+            </div>
     <button type="submit" class="cta-button">Pagar ahora</button>
   </form>
 </section>
